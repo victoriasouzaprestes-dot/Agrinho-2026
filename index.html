@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciamento da Fazenda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerenciamento de Fazenda</h1>
+
+    <div class="form">
+      <h2>Adicionar Colheita</h2>
+      <input type="text" id="harvestName" placeholder="Nome da Colheita">
+      <input type="number" id="harvestQuantity" placeholder="Quantidade">
+      <input type="number" id="harvestPrice" placeholder="Preço Unitário">
+      <button onclick="addHarvest()">Adicionar Colheita</button>
+    </div>
+
+    <div class="form">
+      <h2>Adicionar Animal</h2>
+      <input type="text" id="animalType" placeholder="Tipo de Animal">
+      <input type="number" id="animalQuantity" placeholder="Quantidade">
+      <input type="number" id="animalPrice" placeholder="Preço Unitário">
+      <button onclick="addAnimal()">Adicionar Animal</button>
+    </div>
+
+    <h3>Renda Total: <span id="revenue">R$ 0,00</span></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
